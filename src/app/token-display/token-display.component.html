@@ -1,0 +1,32 @@
+<div *ngIf="token">
+	<h2>Token details:</h2>
+	<div>
+		<label>Token Id: </label> {{token.tokenId}}
+  </div>
+  <div>
+		<label>Date of Issue : </label> {{token.issuingDate}}
+  </div>
+  <div>
+		<label>Alpha Code: </label> {{token.srlAlpha}}
+	</div>
+  <div>
+		<label> Serial NoStart: </label> {{token.srlNoStart}}
+  </div>
+  <div>
+		<label>Serial No End: </label> {{token.srlNoEnd}}
+	</div>
+	<div>
+		<label>Concesiion Code: </label> {{token.concCode}}
+	</div>
+	<div>
+		<label>Remark: </label> {{token.tokenRemark}}
+  </div>
+  <div>
+		<label>Reference Letter: </label> {{token.refLetter}}
+  </div>
+  <div>
+		<label>Id Status: </label> {{token.idStatus}}
+	</div>
+	
+	<button class="btn btn-danger" (click)="delete()">Delete</button>
+</div>

@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let token of tokens"
+		[class.selected]="token === selectedToken" (click)="onSelect(token)">
+		<h4>{{token.tokenId}} - {{token.concCode}} </h4> 
+	</li>
+</ul>
+<app-token-display [token]="selectedToken"></app-token-display>
